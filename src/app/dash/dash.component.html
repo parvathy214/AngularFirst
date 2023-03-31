@@ -1,0 +1,24 @@
+
+<div class="container">
+  <h1 class="  text-center mt-5"  id="dboard" >Employee Dashboard</h1>
+
+<table class="table table-striped  mt-5">
+  <thead>
+    <tr>
+      <th scope="col">S.No</th>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr  *ngFor="let item of User">
+      <th scope="row">{{item.id}}</th>
+      <td>{{item.id}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.email}}</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>

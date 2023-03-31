@@ -1,0 +1,31 @@
+<div class="container">
+<div class="row  justify-content-center mt-2 pt-5 ">
+    <div class="col-6 ">
+        <form  #addform="ngForm"  (ngSubmit)="display()" >
+            <h3 class="text-center mb-1" id="fh">Employee Form</h3> <br>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Name</label>
+                <input type="text" class="form-control" name="Name" #Name="ngModel" [class.is-invalid]="Name.touched && Name.invalid" [(ngModel)]="User.Name" pattern="^[a-zA-Z\s]*$" required >
+                <span class="text-danger" [class.d-none]="Name.untouched||Name.valid" >Enter Letters for Name</span>
+            </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Designation</label>
+                <input type="text" class="form-control"  name="Designation" #Designation="ngModel" [class.is-invalid]="Designation.touched && Designation.invalid" [(ngModel)]="User.Designation" pattern="^[a-zA-Z\s]*$" required>
+                <span class="text-danger" [class.d-none]="Designation.untouched||Designation.valid" >Enter Letters for  Designation</span>
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Location</label>
+                <input type="text" class="form-control"   name="Location"  #Location="ngModel" [class.is-invalid]="Location.touched && Location.invalid" [(ngModel)]="User.Location" pattern="^[a-zA-Z\s]*$" required>
+                <span class="text-danger" [class.d-none]="Location.untouched||Location.valid" >Enter Letters for Location</span>  
+            </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Salary</label>
+                <input type="text" class="form-control" name="Salary" #Salary="ngModel" [class.is-invalid]="Salary.touched && Salary.invalid" [(ngModel)]="User.Salary" pattern="^\d{1,}(\.\d{1,2})?$" required>
+                <span class="text-danger" [class.d-none]="Salary.untouched||Salary.valid" >Enter Numbers for Salary</span>
+              </div>
+              <button type="submit" class="btn btn-success"  [disabled]="addform.form.invalid" >Submit</button>
+            </form>
+            </div>
+
+    </div>
+</div>

@@ -1,0 +1,20 @@
+form{
+    border: 1px solid  rgb(205, 227, 192);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    border-radius: 0.3em;
+    background-color: rgb(230, 248, 219);
+}
+button{
+    width: 100%;
+   /* margin-left: 120px;
+   margin-top: 20px; */
+   margin-top: 30px;
+}
+#fh{
+ color: rgb(9, 96, 101) !important; 
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
